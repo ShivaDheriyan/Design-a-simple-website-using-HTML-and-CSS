@@ -1,0 +1,79 @@
+/* Google fonts Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wdth@88.9&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
+
+html{
+     font-size:62.5%; /*1rem = 10px */
+}
+:root{
+    /* font size & family */
+    /* if we set html's font size 62.5% then 1rem = 10px */
+
+    --body-font:'poppins',sans-serif;
+
+    --big-font: 4rem ;
+    --h1-font: 3.6rem ;
+    --h2-font: 2.4rem ;
+    --h3-font: 2rem ;
+    --h4-font: 1.8rem ;
+    --normal-font: 1.6rem ;
+    --smal-font: 1.4rem ;
+    --smaller-font: 1.3rem ;
+
+    /* font weight */
+    --font-regular: 400 ;
+    --font-medium: 500 ;
+    --font-semi-bold: 600  ;
+
+    /* color variabls */
+    --primary-color: #C87E4F ;
+    --primary-color-hover: #C2703D ;
+    --text-color: #333 ;
+    --text-color-light: #888682 ;
+    --border-color: #484848 ;
+    --white-color: #fff ;
+    --section-bg: #2C3034;
+
+    /* z index */
+    --z-overlay: 10 ;
+    --z-fixed:  100 ;
+
+    /* transition */
+    --tran-0-2: 0.2s;
+    --tran-0-3: 0.3s;
+    --tran-0-5: 0.5s;
+}
+  /*  font size for small screen then 968px */
+    @media screen and (max-width:990px) {
+        :root{
+            --big-font: 3.5rem ;
+            --h1-font: 2.4rem ;
+            --h2-font: 2.4rem ;
+            --h3-font: 2rem ;
+            --h4-font: 1.8rem ;
+            --normal-font: 1.6rem ;
+            --smal-font: 1.3rem ;
+            --smaller-font: 1.2rem ;
+        }
+        
+    }
+
+    /* pre css */
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing:border-box;
+    }
+
+    body,
+    button,
+    input{
+        font-family:var(--body-font);
+        font-size:var(--normal-font);
+        font-weight:var(--font-regular);
+        color:var(--text-color);
+    }
+
+    body{
+        overflow-x:hidden;
+        background-color:var(--white-color);
+    }
